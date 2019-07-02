@@ -50,14 +50,20 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          outline: none;
+
         }
         .circle:hover{
           background: radial-gradient(rgba(255, 255, 255, 0.863), rgba(122, 21, 14, 0.767)); 
+          outline: none;
+
         }
         .circle:active {
           box-shadow: none;
-
+          outline: none;
+          
         }
+        button:focus {outline:0;}
         .circle p {
             position: absolute;
             top: 50%;
@@ -72,9 +78,9 @@
             font-size: 10vw;
 
         }
-        /* .glow {
+        .glow {
           color: rgb(0, 0, 0);
-          transform: translateY(-50%) ;
+          /* transform: translateY(-50%) ; */
           -webkit-animation: glow 1s ease-in-out infinite alternate;
           -moz-animation: glow 1s ease-in-out infinite alternate;
           animation: glow 1s ease-in-out infinite alternate;
@@ -87,7 +93,7 @@
           to {
             text-shadow: 0 0 20px #fff, 0 0 30px #f02b4c, 0 0 40px #f02b4c, 0 0 50px #f02b4c, 0 0 60px #f02b4c, 0 0 70px #f02b4c, 0 0 80px #f02b4c;
           }
-        } */
+        }
 
 
 
