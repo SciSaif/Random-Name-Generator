@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="randomNames.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet"> 
     <title>Random Names Generator</title>
 </head>
@@ -15,9 +14,12 @@
 
     </div>
     <button class="circle">
-         <p class="glow">Saifullah Rahman</p>
+         <p class="glow">Click Me</p>
     </button>
 
+    <div class="saif">
+        <p>Created By Saif</p>
+    </div>
      
     <style>
         *{margin: 0;padding: 0;box-sizing: border-box;}
@@ -32,6 +34,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            /* make text unselectable */
+            -webkit-user-select: none; /* Safari */        
+            moz-user-select: none; /* Firefox */
+            ms-user-select: none; /* IE10+/Edge */
+            ser-select: none; /* Standard */
         }
         input,
         textarea,
@@ -104,7 +112,7 @@
           }
         } */
 
-
+       
 
         .info {
             background: rgba(255, 255, 255, 0.534);
@@ -119,6 +127,20 @@
             font-weight: bold;
             font-size: 18px;
         }
+
+        .saif {
+            position: absolute;
+            bottom: 8%;
+            background: rgba(165, 42, 42, 0.596);
+            padding: 5px 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .saif p {
+            color: rgba(255, 255, 255, 0.685);
+        }
     </style>
+    <script src="randomNames.js"></script>
+
 </body>
 </html>
